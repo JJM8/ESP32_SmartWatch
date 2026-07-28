@@ -35,3 +35,15 @@ cd agent-watch
 pio run
 pio run -t upload
 ```
+
+## Custom PCB
+
+The watch uses a custom-designed PCB (Watch Mk3.4), designed in EasyEDA. The EasyEDA project files are in the [`easyeda/`](easyeda/) directory.
+
+<div align="center">
+
+| |
+|:---:|
+| ![](images/watch_pcb_layout.png) |
+
+</div>
