@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'SF Mono','JetBrains Mono','Consolas',monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#050508"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00ff9d"/>
+      <stop offset="100%" stop-color="#00cc7a"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow-green">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" fill="#f4f4f5" font-size="16" font-weight="700" letter-spacing="2">VOICE INTERACTION FLOW</text>
+  <line x1="220" y1="46" x2="580" y2="46" stroke="#1a1a2e" stroke-width="1"/>
+
+  <!-- Step 1: User speaks -->
+  <rect x="60" y="80" width="220" height="70" rx="10" fill="#0f0f1a" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="60" y="80" width="3" height="70" fill="#3b82f6" rx="1.5"/>
+  <text x="170" y="108" text-anchor="middle" fill="#3b82f6" font-size="11" font-weight="700">01 · SPEAK</text>
+  <text x="170" y="130" text-anchor="middle" fill="#f4f4f5" font-size="12">User speaks naturally</text>
+  <text x="170" y="146" text-anchor="middle" fill="#71717a" font-size="10">"What's on my calendar today?"</text>
+
+  <!-- Arrow 1 -->
+  <line x1="280" y1="115" x2="340" y2="115" stroke="#00ff9d" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.6"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#00ff9d"/>
+    </marker>
+  </defs>
+
+  <!-- Step 2: On-device capture -->
+  <rect x="350" y="80" width="220" height="70" rx="10" fill="#0f0f1a" stroke="#f97316" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="350" y="80" width="3" height="70" fill="#f97316" rx="1.5"/>
+  <text x="460" y="108" text-anchor="middle" fill="#f97316" font-size="11" font-weight="700">02 · CAPTURE</text>
+  <text x="460" y="130" text-anchor="middle" fill="#f4f4f5" font-size="12">I²S microphone records</text>
+  <text x="460" y="146" text-anchor="middle" fill="#71717a" font-size="10">16-bit · 16 kHz audio stream</text>
+
+  <!-- Arrow 2 -->
+  <line x1="570" y1="115" x2="630" y2="115" stroke="#00ff9d" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.6"/>
+
+  <!-- Step 3: WiFi stream -->
+  <rect x="640" y="80" width="130" height="70" rx="10" fill="#0f0f1a" stroke="#a855f7" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="640" y="80" width="3" height="70" fill="#a855f7" rx="1.5"/>
+  <text x="705" y="108" text-anchor="middle" fill="#a855f7" font-size="11" font-weight="700">03 · SEND</text>
+  <text x="705" y="130" text-anchor="middle" fill="#f4f4f5" font-size="12">WiFi stream</text>
+  <text x="705" y="146" text-anchor="middle" fill="#71717a" font-size="10">HTTP / WS</text>
+
+  <!-- Big block: Uniagent Server -->
+  <rect x="100" y="200" width="600" height="180" rx="12" fill="#0f0f1a" stroke="#00ff9d" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="100" y="200" width="600" height="32" rx="12" fill="#00ff9d" opacity="0.1"/>
+  <rect x="100" y="200" width="600" height="32" rx="12" fill="none" stroke="#00ff9d" stroke-width="1"/>
+  <circle cx="128" cy="216" r="6" fill="#00ff9d" filter="url(#glow-green)"/>
+  <text x="142" y="221" fill="#00ff9d" font-size="13" font-weight="700" letter-spacing="1">UNIAGENT SERVER</text>
+  <text x="680" y="221" text-anchor="end" fill="#52525b" font-size="9">Local machine</text>
+
+  <!-- Sub-blocks inside Uniagent -->
+  <rect x="130" y="248" width="160" height="50" rx="6" fill="#1a1a2e" stroke="#00ff9d" stroke-width="1" opacity="0.8"/>
+  <text x="210" y="270" text-anchor="middle" fill="#00ff9d" font-size="11" font-weight="700">Speech-to-Text</text>
+  <text x="210" y="286" text-anchor="middle" fill="#71717a" font-size="9">Whisper / API</text>
+
+  <rect x="320" y="248" width="160" height="50" rx="6" fill="#1a1a2e" stroke="#00ff9d" stroke-width="1" opacity="0.8"/>
+  <text x="400" y="270" text-anchor="middle" fill="#00ff9d" font-size="11" font-weight="700">LLM Reasoning</text>
+  <text x="400" y="286" text-anchor="middle" fill="#71717a" font-size="9">Claude · GPT · Local</text>
+
+  <rect x="510" y="248" width="160" height="50" rx="6" fill="#1a1a2e" stroke="#00ff9d" stroke-width="1" opacity="0.8"/>
+  <text x="590" y="270" text-anchor="middle" fill="#00ff9d" font-size="11" font-weight="700">Tool Execution</text>
+  <text x="590" y="286" text-anchor="middle" fill="#71717a" font-size="9">Terminal · Files · APIs</text>
+
+  <!-- Internal arrows between sub-blocks -->
+  <line x1="290" y1="273" x2="318" y2="273" stroke="#52525b" stroke-width="1" marker-end="url(#arrow-small)" opacity="0.4"/>
+  <line x1="480" y1="273" x2="508" y2="273" stroke="#52525b" stroke-width="1" marker-end="url(#arrow-small)" opacity="0.4"/>
+  <defs>
+    <marker id="arrow-small" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#52525b"/>
+    </marker>
+  </defs>
+
+  <!-- System access row -->
+  <rect x="130" y="316" width="540" height="40" rx="6" fill="#1a1a2e" stroke="#a855f7" stroke-width="1" stroke-dasharray="3,2" opacity="0.7"/>
+  <text x="400" y="336" text-anchor="middle" fill="#c084fc" font-size="10">File System · Calendar · Email · Smart Home · Shell · Web</text>
+  <text x="400" y="350" text-anchor="middle" fill="#52525b" font-size="8">Extensible tool architecture — connect anything</text>
+
+  <!-- Down arrow from step 3 to Uniagent -->
+  <line x1="705" y1="150" x2="705" y2="180" stroke="#00ff9d" stroke-width="1" opacity="0.3"/>
+  <path d="M705,180 Q705,190 695,190 L400,190" stroke="#00ff9d" stroke-width="1" fill="none" opacity="0.3"/>
+  <line x1="400" y1="190" x2="400" y2="198" stroke="#00ff9d" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.6"/>
+
+  <!-- Response arrow: back down -->
+  <line x1="460" y1="380" x2="460" y2="420" stroke="#00ff9d" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.6"/>
+
+  <!-- Step 4: Response -->
+  <rect x="60" y="420" width="220" height="70" rx="10" fill="#0f0f1a" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="60" y="420" width="3" height="70" fill="#3b82f6" rx="1.5"/>
+  <text x="170" y="448" text-anchor="middle" fill="#3b82f6" font-size="11" font-weight="700">04 · DISPLAY</text>
+  <text x="170" y="470" text-anchor="middle" fill="#f4f4f5" font-size="12">Agent response on screen</text>
+  <text x="170" y="486" text-anchor="middle" fill="#71717a" font-size="10">Real-time terminal-style output</text>
+
+  <rect x="310" y="420" width="220" height="70" rx="10" fill="#0f0f1a" stroke="#f97316" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="310" y="420" width="3" height="70" fill="#f97316" rx="1.5"/>
+  <text x="420" y="448" text-anchor="middle" fill="#f97316" font-size="11" font-weight="700">05 · LISTEN</text>
+  <text x="420" y="470" text-anchor="middle" fill="#f4f4f5" font-size="12">TTS read aloud</text>
+  <text x="420" y="486" text-anchor="middle" fill="#71717a" font-size="10">Audio response through speaker</text>
+
+  <rect x="560" y="420" width="180" height="70" rx="10" fill="#0f0f1a" stroke="#a855f7" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="560" y="420" width="3" height="70" fill="#a855f7" rx="1.5"/>
+  <text x="650" y="448" text-anchor="middle" fill="#a855f7" font-size="11" font-weight="700">06 · REPEAT</text>
+  <text x="650" y="470" text-anchor="middle" fill="#f4f4f5" font-size="12">Voice loop ready</text>
+  <text x="650" y="486" text-anchor="middle" fill="#71717a" font-size="10">Wake-word detection</text>
+
+  <!-- Arrows between response steps -->
+  <line x1="280" y1="455" x2="308" y2="455" stroke="#00ff9d" stroke-width="1" marker-end="url(#arrow)" opacity="0.4"/>
+  <line x1="530" y1="455" x2="558" y2="455" stroke="#00ff9d" stroke-width="1" marker-end="url(#arrow)" opacity="0.4"/>
+
+  <!-- Legend -->
+  <rect x="60" y="70" width="10" height="10" rx="2" fill="none" stroke="#52525b" stroke-width="1"/>
+  <text x="76" y="80" fill="#52525b" font-size="9">All processing is local — no cloud dependency</text>
+</svg>
