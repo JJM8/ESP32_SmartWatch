@@ -1,6 +1,6 @@
 # [Agent Watch](https://github.com/JJM8/Agent-Watch)
 
-**A wrist-mounted interface for [Uniagent](https://github.com/joshy/Uniagent).** Speak into a 3D-printed smartwatch and get responses from your AI agent on the built-in screen.
+**A wrist-mounted interface for AI agent frameworks such as [Uniagent](https://github.com/joshy/Uniagent).** Speak into a 3D-printed smartwatch and get responses from your AI agent on the built-in screen.
 
 <div align="center">
 
