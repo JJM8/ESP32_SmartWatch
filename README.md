@@ -1,6 +1,6 @@
 # Agent Watch(WIP)
 
-**A wrist-mounted interface for AI agent frameworks built for engineers of all types** Speak into a rectangular screened smartwatch and get action and responses from your AI agent on the built-in screen.
+**A wrist-mounted interface for AI agent frameworks built for engineers of all types.** Speak into a rectangular screened smartwatch and get action and responses from your AI agent on the built-in screen.
 
 | | |
 |:---:|:---:|
