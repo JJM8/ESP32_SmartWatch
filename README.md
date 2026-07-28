@@ -1,6 +1,6 @@
 # [Agent Watch](https://github.com/JJM8/Agent-Watch)
 
-**A 3D-printed smartwatch that talks to [Uniagent](https://github.com/joshy/Uniagent) over WiFi.** Hold the button, speak, and your agent responds on the screen.
+**A wrist-mounted interface for [Uniagent](https://github.com/joshy/Uniagent).** Speak into a 3D-printed smartwatch and get responses from your AI agent on the built-in screen.
 
 <div align="center">
 
@@ -12,20 +12,20 @@
 
 </div>
 
-## Aim
+## Overview
 
-A wearable interface for Uniagent. Capture audio through an onboard mic, send it to the agent, and display the response on a 2.4-inch TFT.
+A wearable that connects to Uniagent over WiFi. The onboard microphone captures voice, sends it to the agent for processing, and displays the response on a 2.4-inch TFT. The entire case is 3D printed, making this fully customisable.
 
 ## Hardware
 
 | Component | Detail |
 |-----------|--------|
-| **MCU** | ESP32-WROOM-32E, dual-core 240 MHz, 16 MB flash |
+| **MCU** | ESP32-WROOM-32E, 240 MHz dual-core, 16 MB flash |
 | **Display** | ILI9341 TFT, 320x240, resistive touch |
-| **Mic** | I2S MEMS |
+| **Microphone** | I2S MEMS |
 | **Connectivity** | WiFi 802.11 b/g/n, BLE |
 | **Power** | LiPo battery |
-| **Case** | 3D printed PLA/PETG (STL included) |
+| **Enclosure** | 3D printed PLA/PETG (STL included) |
 
 ## Build
 
@@ -35,5 +35,3 @@ cd agent-watch
 pio run
 pio run -t upload
 ```
-
-
