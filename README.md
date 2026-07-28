@@ -1,6 +1,6 @@
-# Agent Watch
+# Agent Watch(WIP)
 
-**A wrist-mounted interface for AI agent frameworks such as [Uniagent](https://github.com/joshy/Uniagent).** Speak into a rectangular screened smartwatch and get action and responses from your AI agent on the built-in screen.
+**A wrist-mounted interface for AI agent frameworks built for engineers of all types** Speak into a rectangular screened smartwatch and get action and responses from your AI agent on the built-in screen.
 
 | | |
 |:---:|:---:|
