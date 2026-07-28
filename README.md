@@ -1,6 +1,6 @@
 # Agent Watch
 
-**A wrist-mounted interface for AI agent frameworks such as [Uniagent](https://github.com/joshy/Uniagent).** Speak into a 3D-printed smartwatch and get responses from your AI agent on the built-in screen.
+**A wrist-mounted interface for AI agent frameworks such as [Uniagent](https://github.com/joshy/Uniagent).** Speak into a rectangular screened smartwatch and get action and responses from your AI agent on the built-in screen.
 
 | | |
 |:---:|:---:|
@@ -10,7 +10,7 @@
 
 ## Overview
 
-A wearable that connects to Uniagent over WiFi. The onboard microphone captures voice, sends it to the agent for processing, and displays the response on a 2.4-inch TFT. The entire case is 3D printed, making this fully customisable.
+A wearable that connects to multiple AI agent frameworks over WiFi. The onboard microphone captures voice, sends it to the agent for processing, and displays the response on a 2.4-inch TFT. The entire case is 3D printed, making this fully customisable.
 
 ## Hardware
 
