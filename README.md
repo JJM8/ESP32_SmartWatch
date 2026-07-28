@@ -2,10 +2,15 @@
 
 **A 3D-printed smartwatch that talks to [Uniagent](https://github.com/joshy/Uniagent) over WiFi.** Hold the button, speak, and your agent responds on the screen.
 
-| | | |
-|:---:|:---:|:---:|
-| ![Assembled](images/watch_assembled.jpg) | ![Enclosure](images/watch_enclosure.jpg) | ![Running](images/watch_running.jpg) |
-| **Assembled** | **Case** | **Live** |
+<div align="center">
+
+| | |
+|:---:|:---:|
+| ![](images/watch_assembled.jpg) | ![](images/watch_enclosure.jpg) |
+| ![](images/watch_display_module.jpg) | ![](images/watch_electronics.jpg) |
+| ![](images/watch_running.jpg) | |
+
+</div>
 
 ## Aim
 
@@ -22,11 +27,6 @@ A wearable interface for Uniagent. Capture audio through an onboard mic, send it
 | **Power** | LiPo battery |
 | **Case** | 3D printed PLA/PETG (STL included) |
 
-| | |
-|:---:|:---:|
-| ![Display module](images/watch_display_module.jpg) | ![Electronics](images/watch_electronics.jpg) |
-| **Display module** | **Internals** |
-
 ## Build
 
 ```bash
@@ -36,13 +36,4 @@ pio run
 pio run -t upload
 ```
 
-## Repo
 
-```
-agent-watch/
-├── images/           # Photos
-├── src/main.cpp      # Firmware
-├── WatchBaseMk3.stl  # 3D printable case
-├── platformio.ini
-└── README.md
-```
