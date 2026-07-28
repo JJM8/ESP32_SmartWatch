@@ -2,6 +2,12 @@
 
 **A wrist-mounted interface for AI agent frameworks such as [Uniagent](https://github.com/joshy/Uniagent).** Speak into a 3D-printed smartwatch and get responses from your AI agent on the built-in screen.
 
+| | |
+|:---:|:---:|
+| ![](images/watch_assembled.jpg) | ![](images/watch_enclosure.jpg) |
+| ![](images/watch_display_module.jpg) | ![](images/watch_electronics.jpg) |
+| ![](images/watch_running.jpg) | |
+
 ## Overview
 
 A wearable that connects to Uniagent over WiFi. The onboard microphone captures voice, sends it to the agent for processing, and displays the response on a 2.4-inch TFT. The entire case is 3D printed, making this fully customisable.
@@ -19,4 +25,8 @@ A wearable that connects to Uniagent over WiFi. The onboard microphone captures 
 ## Custom PCB
 
 The watch uses a custom-designed PCB (Watch Mk3.4), designed in EasyEDA. The EasyEDA project files are in the [`easyeda/`](easyeda/) directory.
+
+| |
+|:---:|
+| ![](images/watch_pcb_layout.png) |
 
