@@ -26,16 +26,6 @@ A wearable that connects to Uniagent over WiFi. The onboard microphone captures 
 | **Connectivity** | WiFi 802.11 b/g/n, BLE |
 | **Power** | LiPo battery |
 | **Enclosure** | 3D printed PLA/PETG (STL included) |
-
-## Build
-
-```bash
-git clone https://github.com/JJM8/agent-watch.git
-cd agent-watch
-pio run
-pio run -t upload
-```
-
 ## Custom PCB
 
 The watch uses a custom-designed PCB (Watch Mk3.4), designed in EasyEDA. The EasyEDA project files are in the [`easyeda/`](easyeda/) directory.
