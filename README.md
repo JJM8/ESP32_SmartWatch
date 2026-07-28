@@ -1,4 +1,4 @@
-# Agent Watch
+# [Agent Watch](https://github.com/JJM8/Agent-Watch)
 
 A 3D-printed smartwatch that talks to [Uniagent](https://github.com/joshy/Uniagent) over WiFi. Hold the button, speak, and your agent responds on the screen.
 
